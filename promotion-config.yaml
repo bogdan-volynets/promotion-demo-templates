@@ -1,5 +1,5 @@
 apiVersion: csdp.codefresh.io/v1
-kind: ApplicationConfiguration
+kind: PromotionTemplate
 metadata:
   name: promotion-template
 spec:
