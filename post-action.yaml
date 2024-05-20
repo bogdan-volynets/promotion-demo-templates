@@ -17,8 +17,8 @@ spec:
       - sh
       source: |
         echo "synced app {{ workflow.parameters.APP_NAME }}"
-        exit 1
-        # sleep 60
+        # exit 1
+        sleep 60
   # - name: echo1
   #   script:
   #     image: alpine
