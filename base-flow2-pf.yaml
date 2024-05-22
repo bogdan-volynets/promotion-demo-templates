@@ -7,19 +7,19 @@ metadata:
     description: 'base-flow2'
 spec:
   triggerEnvironment: my-env
-  postTrigger: 'post-action'
+  # postTrigger: 'post-action'
   steps:
   - environment: staging
     dependsOn:
     - my-env
     policy:
-      preAction: 'pre-action'
-      postAction: 'post-action'
+      # preAction: 'pre-action'
+      # postAction: 'post-action'
       action: commit 
   - environment: production
     dependsOn:
     - staging
     policy:
-      preAction: 'pre-action'
-      postAction: 'post-action'
+      # preAction: 'pre-action'
+      # postAction: 'post-action'
       action: commit
