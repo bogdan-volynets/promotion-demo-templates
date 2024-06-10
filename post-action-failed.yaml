@@ -8,9 +8,9 @@ spec:
     parameters:
     - name: APP_NAME
     # - name: COMMIT_SHA
-  entrypoint: echo-post-action
+  entrypoint: echo-post-action-failed
   templates:
-  - name: echo-post-action
+  - name: echo-post-action-failed
     script:
       image: alpine
       command:
