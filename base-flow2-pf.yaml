@@ -14,12 +14,12 @@ spec:
     - my-env
     policy:
       preAction: 'pre-action'
-      postAction: 'post-action-failed'
+      postAction: 'post-action'
       action: commit 
   - environment: production
     dependsOn:
     - staging
     policy:
-      preAction: 'pre-action'
+      preAction: 'pre-action-failed'
       postAction: 'post-action'
       action: commit
