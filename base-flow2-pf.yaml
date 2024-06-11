@@ -14,7 +14,7 @@ spec:
     - my-env
     policy:
       preAction: 'pre-action'
-      postAction: 'post-action'
+      postAction: 'post-action-failed'
       action: commit 
   - environment: production
     dependsOn:
