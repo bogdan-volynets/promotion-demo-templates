@@ -24,5 +24,6 @@ spec:
       - sh
       source: |
         echo "syncing {{ workflow.parameters.APP_NAME }} "
+        exit 1
         sleep 60
 
