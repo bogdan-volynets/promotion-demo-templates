@@ -1,7 +1,7 @@
 apiVersion: codefresh.io/v1beta1
 kind: Product
 metadata:
-  name: my-product
+  name: my-product-2
   annotations:
     eti: zaguri
   
