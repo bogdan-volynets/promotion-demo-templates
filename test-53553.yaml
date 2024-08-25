@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: test-53553
+  annotations:
+    version: 0.0.1
+    description: 'promotion workflow template'
+    codefresh.io/workflow-origin: promotion
+spec:
+  arguments:
+    parameters:
+      - name: APP_NAME
+  entrypoint: echo-pre-action
+  templates:
+    - name: echo-pre-action
+      script:
+        image: alpine
+        command:
+          - sh
+        source: |
+          echo "syncing {{ workflow.parameters.APP_NAME }} "
