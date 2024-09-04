@@ -7,7 +7,7 @@ spec:
   arguments:
     parameters:
     - name: APP_NAME
-    # - name: COMMIT_SHA
+    - name: COMMIT_SHA
   entrypoint: echo-post-action
   templates:
   - name: echo-post-action
