@@ -21,11 +21,19 @@ metadata:
 spec:
   arguments:
     parameters:
+      - name: APP_NAMESPACE
       - name: APP_NAME
+      - name: REPO_URL
+      - name: BRANCH
+      - name: PATH
       - name: COMMIT_SHA
-      - name: COMMIT_AUTHOR
+        value: ""
       - name: COMMIT_MESSAGE
+        value: ""
+      - name: COMMIT_AUTHOR
+        value: ""
       - name: COMMIT_DATE
+        value: ""
   entrypoint: echo
   templates:
     - name: echo
