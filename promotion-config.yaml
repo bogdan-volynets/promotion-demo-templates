@@ -15,3 +15,6 @@ spec:
     guestbook-ui-deployment.yaml:
       jsonPaths:
         - $..image
+    Charm.yaml:
+      jsonPaths:
+        - appVersion
