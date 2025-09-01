@@ -9,8 +9,8 @@ spec:
         operator: Exists
   priority: 0
   versionSource:
-    file: Chart.yaml
-    jsonPath: appVersion
+    file: version.json
+    jsonPath: $.Application.Version
   promotion:
     guestbook-ui-deployment.yaml:
       jsonPaths:
